@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>emoTAG</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/style.css">
+
+
+    <script src="../static/js/jquery-1.12.4.js"></script>
+    <script src="../static/js/jquery.ui.widget.js"></script>
+    <script src="../static/js/jquery.fileupload.js"></script>
+    <script src="../static/js/jquery.fileupload-process.js"></script>
+    <script src="../static/js/jquery.fileupload-ui.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <a href="#" class="navbar-left"><img id="logo" src="../static/images/emoTag.jpg"></a>
+    </div>
+    <div class="row">
+        <div class="col-sm imgarea">
+            <img id="uploaded-img">
+            <canvas id='img-canvas'></canvas>
+        </div>
+        <div class="col-sm apiarea">
+            <label>Emotion API Response</label>
+            <textarea id="api-response-textarea" readonly></textarea>
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-group btnrow">
+            <span class="input-group-btn">
+                <span class="btn btn-primary btn-file">
+                    Browse <input type="file" id="fileupload" name="file" multiple>
+                </span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<script src="../static/js/emotag.js"></script>
+</body>
+</html>

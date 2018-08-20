@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="ssh://ec2-user@ec2-52-32-20-154.us-west-2.compute.amazonaws.com:22/usr/bin/python3" name="ssh://ec2-user@ec2-52-32-20-154.us-west-2.compute.amazonaws.com:22/usr/bin/python3">
+        <fileTransfer host="ec2-52-32-20-154.us-west-2.compute.amazonaws.com" port="22" privateKey="$USER_HOME$/.ssh/opencv-emotion.pem" accessType="SFTP" keyPair="true">
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
